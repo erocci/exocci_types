@@ -1,8 +1,4 @@
-defmodule ExocciTypesTest do
+defmodule OcciTypesTest do
   use ExUnit.Case
-  doctest ExocciTypes
-
-  test "greets the world" do
-    assert ExocciTypes.hello() == :world
-  end
+  doctest OCCI.Types
 end
