@@ -4,12 +4,10 @@ defmodule OcciTypes.MixProject do
   def project do
     [
       app: :occi_types,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
-      aliases: [
-        compile: ["format", "compile", "credo"]
-      ],
+      aliases: aliases(Mix.env()),
       deps: deps(),
       name: "exocci.types",
       description: description(),
@@ -61,4 +59,11 @@ defmodule OcciTypes.MixProject do
       source_url: "https://github.com/erocci/exocci_types"
     ]
   end
+
+  defp aliases(env) when env in [:dev, :test] do
+    [
+      compile: ["format", "compile", "credo"]
+    ]
+  end
+  defp aliases(_), do: []
 end
