@@ -65,5 +65,6 @@ defmodule OcciTypes.MixProject do
       compile: ["format", "compile", "credo"]
     ]
   end
+
   defp aliases(_), do: []
 end
