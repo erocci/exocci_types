@@ -1,5 +1,7 @@
 # OCCI Types
 
+[![Hex.pm](https://img.shields.io/hexpm/v/occi.types.svg)](https://hex.pm/packages/occi_types) [![Build Status](https://travis-ci.org/erocci/exocci_types.svg?branch=master)](https://travis-ci.org/erocci/exocci_types)
+
 OCCI types in a separate app as model compilation requires type
 modules at early stage.
 
